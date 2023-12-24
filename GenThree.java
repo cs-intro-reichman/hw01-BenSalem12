@@ -4,14 +4,14 @@
  */
 public class GenThree {
 	public static void main(String[] args) {
-		int max = Integer.parseInt (args [0]);
-		int min = Integer.parseInt (args [1]);
+		int min = Integer.parseInt (args [0]);
+		int max = Integer.parseInt (args [1]);
 		int first_num = (int)(Math.random()*(max - min) + min);
 		int sec_num = (int)(Math.random()*(max - min) + min);
 		int third_num = (int)(Math.random()*(max - min) + min);
 		int temp_min = Math.min (first_num, sec_num);
 		int final_min = Math.min (temp_min, third_num);
 		System.out.println(first_num + "\n" + sec_num + "\n" + third_num);
-		System.out.println("The minimal generated number was " + final_min); 		
+		System.out.println("The minimal generated number was " + final_min);		
 	}
 }
